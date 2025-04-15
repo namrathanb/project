@@ -1,0 +1,45 @@
+.home-directory{
+    text-align: center;
+}
+.login-table{
+    text-align: center;
+}
+
+.navbar li, .home-directory li{
+    display: grid;
+    width: 400px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.WebHeader {
+    font-size: 30px;
+}
+
+a {
+    display: grid;
+    color: black;
+    grid-gap: 10px;
+    transition: all 0.5s ease-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #d5f4e6;
+    color: rgb(25, 71, 168);
+    font-size: 20px;
+}
+
+.header-background{
+    background-image: url("/img/HeaderBG.png");
+    background-size: cover;
+    padding-bottom: 35%; 
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}  
+
+body {
+    background-color: #2e9bb6;
+}

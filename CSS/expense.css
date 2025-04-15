@@ -1,0 +1,136 @@
+footer {
+    background-image: url("/img/HeaderBG.png");
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color: black; 
+}
+
+.header-background{
+    background-image: url("/img/HeaderBG.png");
+    background-size: cover;
+    padding-bottom: 50px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    box-sizing: border-box;
+}
+
+.navbar li, .home-directory li{
+    display: grid;
+    width: 400px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.WebHeader {
+    font-size: 30px;
+}
+
+a {
+    display: grid;
+    color: black;
+    grid-gap: 10px;
+    transition: all 0.5s ease-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #d5f4e6;
+    color: rgb(25, 71, 168);
+    font-size: 20px;
+}
+
+p {
+    font-size: large;
+    font: Serif;
+    
+}
+
+body {
+    background-image: url("/img/questionnaire-bg.jpg");
+    background-size: cover;
+    font-family: serif;
+    }
+    
+.Expense-Q{
+    text-align: center;
+}
+
+canvas {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.attentionGrab {
+    text-align: center;
+    font-size: medium;
+}
+
+    main {
+    width: 60%;
+    border: 1px gray solid;
+    margin: auto;
+    padding: 10px;
+    background-color: #69b8cc;
+    border-radius: 3px;
+    }
+    
+    .q1, .q2, .q3, .q4, .q5 {
+        width: 80%;
+        margin: 30px auto;
+        background-color: #2e9bb6;
+        color: black;
+        height: 200px;
+        border-radius: 3px;
+        text-align: center;
+        box-shadow: 1px 1px 7px rgba(0,0,0);
+  
+    }
+
+    .submit-btn {
+        text-align: center;
+        width: 25%;
+        margin: 20px auto;
+        padding: 20px 0;
+    }
+
+    label {
+    font-family: serif;
+    text-align: center;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 150px;
+    display: inline-block;
+    }
+
+    #response {
+        color: black;
+        text-shadow: 2px 2px 4px #0d1a2b;
+        text-align: center;
+        display: grid;
+        width: 350px;
+        margin: 0 auto; 
+    }
+
+    button {
+    display: block;
+    margin-top: 20px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    h3 {
+        color: black;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .ssExplained {
+        text-align: center;
+    }

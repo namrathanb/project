@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------<title> Expense Tracker | Home</title>------>
+    <link rel="stylesheet" href="CSS/breakdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+    <body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">EXPENSE TRACKER</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="expense-quizzes.html">Expense Questionnaire</a></li>
+        <li><a href="financial-breakdown.html">Budget Calculator</a></li>
+        <li><a href="login.html">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+            </h1>
+        </header><br><br><br>
+            <main><br><br><br>
+                <h1 class="Expense-Q">Expense Questionnaire</h1>
+                    <p class="attentionGrab"><i>What is your spending style? Are you a saver, spender, or debtor?</i></p>
+                <form id="form1">
+                    <article class="q1">
+                    <p>How many times per week do you eat at a restaurant, cafe, or fast food?</p>
+                        <label><input type="radio" name="goals" id="finGoals" value="saver" />0-2</label>
+                        <label><input type="radio" name="goals" id="finGoals" value="spender" />3-5</label>
+                        <label><input type="radio" name="goals" id="finGoals" value="debtor" />Everyday</label>
+
+                    </article>
+                    <article class="q2">
+                        <p>Outside of the essentials (rent, bills, etc.), how much do you spend each week?</p>
+                        <label><input type="radio" name="jobStat" id="jobStatus" value="saver" />₹10000-₹15000</label>
+                        <label><input type="radio" name="jobStat" id="jobStatus" value="spender" />₹25000-₹40000</label>
+                        <label><input type="radio"  name="jobStat" id="jobStatus" value="debtor" />₹50000 or up</label>
+                    </article>
+                    <article class="q3">
+                        <p>Which of the following financial breakdown scenarios best suites you? (on a monthly basis)</p>
+                        <label><input type="radio" name="financeStat" id="finBreak" value="saver" />Food(25%), Rent(50%), Social (12.5%), Other(12.5%)</label>
+                        <label><input type="radio" name="financeStat" id="finBreak" value="spender" />Food(15%), Rent(50%), Social (35%)</label>
+                        <label><input type="radio"  name="financeStat" id="finBreak" value="debtor" />Food(35%), Rent(10%), Social (35%), Other(20%)</label>
+                    </article>
+                    <article class="q4">
+                        <p>How often do you shop at the grocery store closest to campus each week?</p>
+                        <label><input type="radio" name="wkSpent" id="weeklySpend" value="saver" />0-1 times</label>
+                        <label><input type="radio" name="wkSpent" id="weeklySpend" value="spender" />2-4 times</label>
+                        <label><input type="radio"  name="wkSpent" id="weeklySpend" value="debtor" />Everyday</label>
+                    </article>
+                    <article class="q5">
+                        <p>Do you find yourself spending or saving more often?</p>
+                        <label><input type="radio" name="spentFreq" id="spendOSave" value="saver" />I am more of a saver</label>
+                        <label><input type="radio" name="spentFreq" id="spendOSave" value="spender" />I am more of a spender</label>
+                        <label><input type="radio" name="spentFreq" id="spendOSave" value="debtor" />I aggressively spend more</label>
+                    </article>
+                    <article class="submit-btn">
+                        <input type="submit" value="submit">
+                    </article>
+
+                <p id="response">Spending personality trait(s): <span id="answer"></span></p>
+                <canvas id="myChart" style="width:100%;max-width:200px"></canvas>
+
+                </form>
+
+                    <h1 class="heading">Spending Styles Explained...</h1>
+                        <p class="ssExplained"><i>It is important to note that spending personality types are not always one-size-fits-all.
+                            Below, we have provided a brief description of the three spending personality types you could receive from our questionnaire.
+                            The purpose of our questionnaire is to help you recognize your spending type, and address any challenges that could arise from it.
+                            After completing our questionnaire, please utilize our budget calculator considering your spending type!
+                        </i></p>
+                    <section class="ssContainer">
+                        <h3>Saver</h3>
+                            <p class="ssExplained">Savers are conservative by nature, and don't take big risks with investments or large purchases.
+                                Savers fall on a continuum, spanning from those who avoid spending at all costs, to those who
+                                generally save but don't shy away from spending on things that are deemed as valuable to them.
+                                They typically don't spend money unnecessarily, and look to get good value out of the money they
+                                are spending.
+                            </p>
+                        <h3>Spender</h3>
+                            <p class="ssExplained">Spenders are more willing to spend money on unnecessary things, as they tend to not worry as much
+                                about their financial obligations. Spenders are constnatly looking for good bargains regardless of their
+                                financial status. They often get by with little financial literacy, but manage. When it comes to investing,
+                                they are comfortable spending money and are willing to take big risks.
+                            </p>
+                        <h3>Debtor</h3>
+                            <p class="ssExplained">Debtors typically spend more money than they can earn while not putting much thought into invesments and
+                                their financial obligations. They fail to keep tabs on what they spend and where they spend it. Debtors develop emotional
+                                satisfaction from spending money. Debtors also fail to take advantage of any bonuses given to them.
+                            </p>
+                    </section>
+            </main>
+    </body>
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="src/expense.js"></script>
+        <section>
+            <p>
+                This is a project created by Namratha N B, Kalpa Makam, Pratheeksha R Rao, Sadasivini Kuvalesh
+            <h3>
+                Have a question? Contact us!
+            </h3>
+            <ul>
+              <li>
+                  namrathanb@luc.edu -- Namratha N B's Email
+              </li>
+              <li>
+                  kalpamakam@luc.edu -- Kalpa Makam's Email
+              </li>
+              <li>
+                   pratheeksharrao@luc.edu -- Pratheeksha R Rao's Email
+              </li>
+              <li>
+                  kuvalesh@luc.edu -- Kuvalesh's Email
+              </li>
+            </ul>
+        </section>
+    </footer>
+</html>
